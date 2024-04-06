@@ -5,7 +5,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center p-12">
       <h1 className="text-4xl font-bold mb-8">Tekken 8 Data Visualizer</h1>
       <Image
-        src="/tekken-logo.svg" // Replace with our Tekken-related image
+        src="/tekken-logo.png" // Replace with our Tekken-related image
         alt="Tekken Logo"
         width={250}
         height={100}
