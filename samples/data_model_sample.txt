@@ -1,26 +1,30 @@
 {
     "month": "April",
+    "year": 2024,
     "days": [
         {
             "date": "2024-04-01",
             "sessions": [
                 {
                     "sessionID": "session_123",
-                    "matchups": [
+                    "matches": [
                         {
+                            "matchID": "match_456",
                             "matchType": "Quick Match",
                             "rounds": [
                                 {
                                     "roundNumber": 1,
-                                    "user_character": "CharacterA",
-                                    "opponent_character": "CharacterB",
-                                    "user_rank": "Silver",
-                                    "opponent_rank": "Gold"
+                                    "roundResults": {
+                                        "user_character": "CharacterA",
+                                        "opponent_character": "CharacterB",
+                                        "user_rank": "Silver",
+                                        "opponent_rank": "Gold"
+                                    }
                                 },
-                                // Rounds 2 and 3 (if applicable)
+                                // Other rounds
                             ]
                         },
-                        // Other matchups
+                        // Other matches
                     ]
                 },
                 // Other sessions
