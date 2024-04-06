@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        button {
+            width: 100px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="entryForm">
+        <input type="text" id="matchupId" placeholder="Matchup ID">
+        <input type="text" id="matchupType" placeholder="Matchup Type">
+        <input type="text" id="player" placeholder="Player">
+        <input type="text" id="player2" placeholder="Player 2">
+        <input type="text" id="wl" placeholder="W/L">
+        <input type="text" id="match1" placeholder="MATCH 1">
+        <input type="text" id="m1rw" placeholder="M1RW">
+        <input type="text" id="m1rl" placeholder="M1RL">
+        <input type="text" id="match2" placeholder="MATCH 2">
+        <input type="text" id="m2rw" placeholder="M2RW">
+        <input type="text" id="m2rl" placeholder="M2RL">
+        <input type="text" id="match3" placeholder="MATCH 3">
+        <input type="text" id="m3rw" placeholder="M3RW">
+        <input type="text" id="m3rl" placeholder="M3RL">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('entryForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var matchupId = document.getElementById('matchupId').value;
+            var matchupType = document.getElementById('matchupType').value;
+            var player = document.getElementById('player').value;
+            var player2 = document.getElementById('player2').value;
+            var wl = document.getElementById('wl').value;
+            var match1 = document.getElementById('match1').value;
+            var m1rw = document.getElementById('m1rw').value;
+            var m1rl = document.getElementById('m1rl').value;
+            var match2 = document.getElementById('match2').value;
+            var m2rw = document.getElementById('m2rw').value;
+            var m2rl = document.getElementById('m2rl').value;
+            var match3 = document.getElementById('match3').value;
+            var m3rw = document.getElementById('m3rw').value;
+            var m3rl = document.getElementById('m3rl').value;
+            console.log('Matchup ID:', matchupId);
+            console.log('Matchup Type:', matchupType);
+            console.log('Player:', player);
+            console.log('Player 2:', player2);
+            console.log('W/L:', wl);
+            console.log('MATCH 1:', match1);
+            console.log('M1RW:', m1rw);
+            console.log('M1RL:', m1rl);
+            console.log('MATCH 2:', match2);
+            console.log('M2RW:', m2rw);
+            console.log('M2RL:', m2rl);
+            console.log('MATCH 3:', match3);
+            console.log('M3RW:', m3rw);
+            console.log('M3RL:', m3rl);
+        });
+    </script>
+</body>
+</html>
