@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import Hello from "../pages/hellolist";
 import HelloFetch from "../pages/hellofetch";
@@ -34,7 +35,7 @@ export default function Home() {
         </div>
 
         <div className="rounded-lg border border-gray-300 shadow p-4 flex flex-col items-center">
-          <h2 className="font-semibold mb-3">Matchups Analysis</h2>
+          <h2 className="font-semibold mb-3">Match-ups Analysis</h2>
           <p>Discover strategies against different opponents.</p>
         </div>
 
