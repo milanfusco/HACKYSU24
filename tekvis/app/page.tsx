@@ -6,6 +6,7 @@ import Matchups from "../pages/matchups";
 import CompareCharacter from '@/pages/CompareCharacters';
 import MatchupAnalysis from '@/pages/MatchupAnalysis';
 import ImproveGame from '@/pages/ImproveGame';
+import PlayerDataEditor from '@/pages/PlayerDataEditor'
 
 export default function Home() {
   return (
@@ -50,7 +51,7 @@ export default function Home() {
           <p>Receive personalized tips based on your playstyle.</p>
           <ImproveGame/>
         </div>
-        <Hello />
+        <PlayerDataEditor />
       </div>
     </main>
   );
