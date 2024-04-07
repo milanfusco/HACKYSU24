@@ -8,6 +8,7 @@ export default function MatchupAnalysis() {
     <div>
         <ul>
             <p>Match ID,  Match Player, Match Opponent, Player Win/Loss</p>
+            {/* Need to learn how to groupby lambda functions here */}
             {matchesList?.map((match) => (
                 <li key={match._id}>
                     <p>{match.MatchupID}, {match.Player}, 
