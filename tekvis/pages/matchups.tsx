@@ -1,25 +1,13 @@
 import clientPromise from "../lib/mongodb";
 import { GetServerSideProps } from 'next';
 import MATCHESLIST from "./MatchesList"
+import Match from "../lib/models/match";
 
 const WINLOSSPROPS = ["W", "L"];
 const MatchupTypePROPS = ["Quick", "Ranked"];
 const CHARACTERS = ["Jun","Asuka", "Kuma", "Dragunov", "Lee", "Yoshimitsu", "Xiaoyu"]; 
 
 const matchesList = MATCHESLIST()
-
-interface Match {
-   _id: string;
-   Session: string;
-   MatchupID: number;
-   MatchupType: string; //["Quick", "Ranked"];
-   Player: "Jun"; //["Jun","Asuka"];
-   Opponent: string; //["Jun","Asuka", "Kuma", "", "", ""];
-   PlayerWinLoss: string; //["W", "L"];
-   MATCH1: {M1RW: number,M1RL:number};
-   MATCH2: {M2RW: number,M2RL:number};
-   MATCH3: {M2RW: number,M2RL:number}
-}
 
 interface MatchProps {
    matches: Match[];
