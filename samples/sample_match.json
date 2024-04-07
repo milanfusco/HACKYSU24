@@ -1,0 +1,35 @@
+{
+    "_id": "6611df5c8af1d9e8120a3436",
+    "year": 2024,
+    "days": [
+        {
+            "date": "2024-04-01",
+            "sessions": [
+                {
+                    "sessionID": "session_123",
+                    "matches": [
+                        {
+                            "matchID": "match_456",
+                            "matchType": "Quick Match",
+                            "rounds": [
+                                {
+                                    "roundNumber": 1,
+                                    "roundResults": {
+                                        "user_character": "CharacterA",
+                                        "opponent_character": "CharacterB",
+                                        "user_rank": "Silver",
+                                        "opponent_rank": "Gold"
+                                    }
+                                },
+                                // Other rounds
+                            ]
+                        },
+                        // Other matches
+                    ]
+                },
+                // Other sessions
+            ]
+        },
+        // Other days
+    ]
+}

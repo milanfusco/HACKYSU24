@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Hello from "../pages/hellolist";
+import HelloFetch from "../pages/hellofetch";
+import Matchups from "../pages/matchups";
 
 export default function Home() {
   return (
@@ -19,8 +22,9 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
         <div className="rounded-lg border border-gray-300 shadow p-4 flex flex-col items-center">
           <h2 className="font-semibold mb-3">Your Stats</h2>
-          <p>Track your wins, losses, and improvement over time.</p>
-          {/* Insert interactive component or image */}
+          <p>Track your wins, losses, and improvement over time. this is HelloFetch</p>
+          <Matchups/>
+
         </div>
 
         <div className="rounded-lg border border-gray-300 shadow p-4 flex flex-col items-center">
@@ -32,14 +36,15 @@ export default function Home() {
         <div className="rounded-lg border border-gray-300 shadow p-4 flex flex-col items-center">
           <h2 className="font-semibold mb-3">Matchups Analysis</h2>
           <p>Discover strategies against different opponents.</p>
-          {/* Insert interactive component or image */}
         </div>
 
         <div className="rounded-lg border border-gray-300 shadow p-4 flex flex-col items-center">
           <h2 className="font-semibold mb-3">Improve Your Game</h2>
           <p>Receive personalized tips based on your playstyle.</p>
+          <HelloFetch/>
           {/* Insert interactive component or image */}
         </div>
+        <Hello />
       </div>
     </main>
   );
