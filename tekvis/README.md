@@ -1,6 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tekken 8 gameplay stats
 
-## Getting Started
+Put your scope, goals, and summary here in this paragraph. 
+
+## @TODO list of items
+Bullet list of todos and completed.
+
+1. Complete Stubs of components 
+2. Get mongo database layer connection working
+3. Create UI component for CRUD the data like spreadsheet
+  * Lookup react/nextjs opensource components
+  * 
+4. Learn how to do components. 
+5. ~Mark completed items using tilde~
+
+
+
+## Getting Started and running the code
 
 First, run the development server:
 
