@@ -1,4 +1,6 @@
+import React, { useState, useEffect } from 'react';
 import Image from "next/image";
+import {string} from "prop-types";
 
 export default function Home() {
   return (
@@ -30,17 +32,27 @@ export default function Home() {
         </div>
 
         <div className="rounded-lg border border-gray-300 shadow p-4 flex flex-col items-center">
-          <h2 className="font-semibold mb-3">Matchups Analysis</h2>
+          <h2 className="font-semibold mb-3">Match-ups Analysis</h2>
           <p>Discover strategies against different opponents.</p>
           {/* Insert interactive component or image */}
         </div>
 
         <div className="rounded-lg border border-gray-300 shadow p-4 flex flex-col items-center">
           <h2 className="font-semibold mb-3">Improve Your Game</h2>
-          <p>Receive personalized tips based on your playstyle.</p>
+          <p>Receive personalized tips based on your play style.</p>
           {/* Insert interactive component or image */}
         </div>
-      </div>
+      </div >
+
+        <div className="rounded-lg border border-gray-300 text-xl mb-12">
+            <p>
+                Visualize and analyze your Tekken 8 gameplay stats to enhance your skills
+            </p>
+            <p>
+
+            </p>
+
+        </div>
     </main>
   );
 }
