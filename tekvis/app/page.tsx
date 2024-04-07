@@ -3,18 +3,23 @@ import Image from "next/image";
 import Hello from "../pages/hellolist";
 import HelloFetch from "../pages/hellofetch";
 import Matchups from "../pages/matchups";
+import CompareCharacter from '@/pages/CompareCharacters';
+import MatchupAnalysis from '@/pages/MatchupAnalysis';
+import ImproveGame from '@/pages/ImproveGame';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-12">
       <h1 className="text-4xl font-bold mb-8">Tekken 8 Data Visualizer</h1>
-      <Image
-        src="/tekken-logo.svg" // Replace with our Tekken-related image
-        alt="Tekken Logo"
-        width={250}
-        height={100}
-        priority
-      />
+      <div>
+        <Image
+          src="/tekken-logo.svg" // Replace with our Tekken-related image
+          alt="Tekken Logo"
+          width={150}
+          height={100}
+          priority
+        />
+      </div>
       
       <p className="text-xl my-6">
         Visualize and analyze your Tekken 8 gameplay stats to enhance your skills.
@@ -31,19 +36,19 @@ export default function Home() {
         <div className="rounded-lg border border-gray-300 shadow p-4 flex flex-col items-center">
           <h2 className="font-semibold mb-3">Compare Characters</h2>
           <p>See which characters are your strongest picks.</p>
-          {/* Insert interactive component or image */}
+          <CompareCharacter/>
         </div>
 
         <div className="rounded-lg border border-gray-300 shadow p-4 flex flex-col items-center">
           <h2 className="font-semibold mb-3">Match-ups Analysis</h2>
           <p>Discover strategies against different opponents.</p>
+          <MatchupAnalysis/>
         </div>
 
         <div className="rounded-lg border border-gray-300 shadow p-4 flex flex-col items-center">
           <h2 className="font-semibold mb-3">Improve Your Game</h2>
           <p>Receive personalized tips based on your playstyle.</p>
-          <HelloFetch/>
-          {/* Insert interactive component or image */}
+          <ImproveGame/>
         </div>
         <Hello />
       </div>
